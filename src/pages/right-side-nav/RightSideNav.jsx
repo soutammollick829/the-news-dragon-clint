@@ -10,21 +10,21 @@ const RightSideNav = () => {
       <h5 className="fw-bold mb-4">Login With</h5>
       <div>
         <ListGroup as="ul">
-          <ListGroup.Item as="li"><FaGoogle className="me-3"/>Login with Google</ListGroup.Item>
+          <ListGroup.Item as="li"><FaGoogle className="me-3 text-success"/>Login with Google</ListGroup.Item>
           <ListGroup.Item as="li">
-            <FaGithub className="me-3"/>Login with Github
+            <FaGithub className="me-3 text-warning"/>Login with Github
           </ListGroup.Item>
         </ListGroup>
       </div>
       <h5 className="fw-semibold mt-4">Find Us On</h5>
       <div>
       <ListGroup as="ul">
-          <ListGroup.Item as="li"><FaFacebook className="me-3"/>Facebook</ListGroup.Item>
+          <ListGroup.Item as="li"><FaFacebook className="me-3 text-primary"/>Facebook</ListGroup.Item>
           <ListGroup.Item as="li">
-            <FaTwitter className="me-3"/>Twitter
+            <FaTwitter className="me-3 text-primary"/>Twitter
           </ListGroup.Item>
           <ListGroup.Item as="li">
-            <FaInstagram className="me-3"/>Instagram
+            <FaInstagram className="me-3 text-danger"/>Instagram
           </ListGroup.Item>
         </ListGroup>
       </div>

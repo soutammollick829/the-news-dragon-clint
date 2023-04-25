@@ -12,7 +12,7 @@ const LaftSideNav = () => {
   }, []);
   return (
     <div>
-      <h4>All Caterogy</h4>
+      <h4>All Category</h4>
       <div className="mt-4">
         {categories.map((category) => (
           <p key={category.id}>
@@ -21,7 +21,7 @@ const LaftSideNav = () => {
               style={({ isActive, isPending }) => {
                 return {
                   fontWeight: isActive ? "bold" : "",
-                  color: isPending ? "red" : "black",
+                  color: isPending ? "blue" : "",
                 };
               }}
             >
