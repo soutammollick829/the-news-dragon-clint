@@ -1,7 +1,10 @@
 import React from "react";
-import { Button, Card } from "react-bootstrap";
+import { Button, Card, CardGroup } from "react-bootstrap";
 import { FaArrowLeft } from "react-icons/fa";
 import { Link, useLoaderData } from "react-router-dom";
+import first from '../../assets/1.png'
+import second from '../../assets/2.png'
+import third from '../../assets/3.png'
 
 const News = () => {
   const news = useLoaderData();
@@ -32,6 +35,39 @@ const News = () => {
           </Link>
         </Card.Body>
       </Card>
+
+      <div className="mt-5">
+        <h4>Editors Insight</h4>
+        <CardGroup className="mt-4 gap-4">
+          <Card style={{height: '100px'}}>
+            <Card.Img variant="top" src={first} />
+            <Card.Body>
+              <Card.Title>21 The Most Stylish Wedding Guest Dresses For Spring</Card.Title>
+            </Card.Body>
+            <Card.Footer>
+              <small className="text-muted">Last updated 3 mins ago</small>
+            </Card.Footer>
+          </Card>
+          <Card>
+            <Card.Img variant="top" src={second} />
+            <Card.Body>
+              <Card.Title>21 The Most Stylish Wedding Guest Dresses For Spring</Card.Title>
+            </Card.Body>
+            <Card.Footer>
+              <small className="text-muted">Last updated 3 mins ago</small>
+            </Card.Footer>
+          </Card>
+          <Card>
+            <Card.Img variant="top" src={third} />
+            <Card.Body>
+              <Card.Title>21 The Most Stylish Wedding Guest Dresses For Spring</Card.Title>
+            </Card.Body>
+            <Card.Footer>
+              <small className="text-muted">Last updated 3 mins ago</small>
+            </Card.Footer>
+          </Card>
+        </CardGroup>
+      </div>
     </div>
   );
 };
